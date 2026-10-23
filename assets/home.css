@@ -1,0 +1,44 @@
+/* アプリを選ぶ入口と、共通のアプリカード。 */
+.selection-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.selection-card{display:flex;flex-direction:column;align-items:center;text-align:center;min-width:0;min-height:320px;padding:40px 24px 30px;background:#fff;border:1px solid #e1e5eb;border-radius:24px;transition:border-color .18s,box-shadow .18s,transform .18s}
+a.selection-card:hover{color:#1d293f;border-color:#a9bdd8;box-shadow:0 12px 32px #2339570c;transform:translateY(-3px)}
+.selection-card img{width:96px;height:96px;border-radius:23px;margin-bottom:22px;box-shadow:0 4px 16px #152d4710}
+.selection-name,.selection-card h3{font-size:23px;line-height:1.5;font-weight:650;letter-spacing:-.02em}
+.selection-subtitle,.selection-card>p{font-size:12px;color:#687386;margin:7px 0 0}
+.selection-link{font-size:12px;color:#345f97;font-weight:550;margin-top:auto;padding-top:26px}
+.selection-link>span{display:inline-block;margin-left:12px;transition:transform .18s}
+a.selection-card:hover .selection-link>span{transform:translateX(4px)}
+.selection-pending{background:#f9fafc;border-color:#e4e8ee;box-shadow:none}
+.pending-icon{display:grid;place-items:center;width:96px;height:96px;border-radius:23px;background:#eef1f5;color:#a1adbf;font-size:32px;font-weight:300;margin-bottom:22px}
+.selection-pending h3{color:#6c788b;font-weight:500}
+.pending-label{color:#8691a2;background:#eef1f5;font-size:10px;padding:2px 13px;border-radius:20px;margin-top:25px}
+.home{background:#f5f6f8;color:#1d293f;letter-spacing:.015em}
+.home .header{max-width:1120px;padding-top:25px;padding-bottom:25px}
+.home .brand{font-size:22px;letter-spacing:-.045em}
+.home .brand-sub{font-size:9px;letter-spacing:.08em;text-transform:none}
+.home .header nav{font-size:11px;color:#69758a}
+.home main{max-width:1040px}
+.selection-hero{text-align:center;padding:76px 0 58px}
+.selection-hero .eyebrow{font-size:10px;letter-spacing:.19em;color:#637d9e;margin-bottom:20px}
+.selection-hero h1{font-size:44px;font-weight:650;line-height:1.5;letter-spacing:.02em;margin-bottom:19px}
+.selection-hero>p:not(.eyebrow){font-size:14px;line-height:2;color:#687386;margin-bottom:26px}
+.selection-hero .button{font-size:11px;background:#263e62;border-radius:24px;padding:10px 23px;gap:20px}
+.selection-hero .button:hover{background:#345780}
+.mobile-break{display:none}
+.selection-section{padding:12px 0 57px}
+.selection-heading{display:flex;align-items:baseline;gap:13px;margin-bottom:23px}
+.selection-heading h2{font-size:19px;letter-spacing:.025em}
+.selection-heading>span{font-size:11px;color:#8a95a6;letter-spacing:.02em}
+.home-contact{text-align:center;border-top:1px solid #e1e5eb;padding:43px 0 52px}
+.home-contact h2{font-size:20px;margin-bottom:12px}
+.home-contact p{font-size:12px;color:#687386;line-height:2;margin-bottom:16px}
+.home-contact>a{display:inline-block;font-size:12px;color:#345f97;padding:4px 10px}
+.home-contact>a span{margin-left:9px}
+.home footer{max-width:1040px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-top:22px;padding-bottom:27px;gap:16px;color:#8691a2}
+.home footer>div:first-child{display:none}
+.home .footer-links{order:2;gap:24px;padding:0;font-size:10px}
+.home footer small{order:1;font-size:10px}
+.home .draft{background:#edf0f5;color:#78869b;font-size:10px;padding:5px 14px}
+@media(min-width:1100px){.selection-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.home .selection-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.home .header{padding:20px;align-items:center}.home .header nav{width:auto;gap:16px;padding:0}.home .header nav a:nth-child(2){display:none}.home .brand-sub{display:none}.selection-hero{padding:51px 0 38px}.selection-hero h1{font-size:32px;line-height:1.65;letter-spacing:.01em}.selection-hero .eyebrow{font-size:9px;letter-spacing:.14em;margin-bottom:16px}.selection-hero>p:not(.eyebrow){font-size:12px}.mobile-break{display:block}.selection-section{padding:12px 0 35px}.selection-heading{margin-bottom:18px}.selection-heading h2{font-size:17px}.selection-heading>span{font-size:10px}.selection-grid{grid-template-columns:1fr;gap:16px}.selection-card{min-height:290px;padding:31px 20px 26px;border-radius:21px}.selection-card img,.pending-icon{width:84px;height:84px;border-radius:20px;margin-bottom:18px}.selection-name,.selection-card h3{font-size:22px}.selection-link{padding-top:22px}.home-contact{padding:33px 0 37px}.home-contact h2{font-size:19px}.home-contact p{font-size:11px}.home footer{padding:20px;gap:14px}.home .footer-links{gap:14px;font-size:9px}.home footer small{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.selection-card,.selection-link>span{transition:none}a.selection-card:hover,.selection-card:hover .selection-link>span{transform:none}}
